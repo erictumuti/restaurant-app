@@ -8,8 +8,13 @@
           <div class="alert alert-success">{{Session::get('message')}}</div>
 		@endif
             <div class="card">
-                <div class="card-header">{{ __('All Foods') }}</div>
-
+                <div class="card-header">{{ __('All Foods') }}
+				<span class="float-right">
+				<a href="{{route('food.create')}}">
+                   <button class="btn btn-outline-secondary">Add Food</button>
+				</a>
+				</span>
+				</div>
                 <div class="card-body">
 				<table class="table">
 			<thead class="thead-dark">
